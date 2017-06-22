@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Item</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-icon [name]="selectedItem.icon"></ion-icon>
+  <div class="item">
+    {{selectedItem.note}}
+  </div>
+  <div class="item">
+    The {{selectedItem.icon}} item is very {{selectedItem.icon}}-y
+  </div>
+</ion-content>
